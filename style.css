@@ -1,0 +1,70 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.accordion{
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    margin: 0px 10px;
+    padding: 12px;
+    border-radius: 6px;
+    transition: all 1s linear;
+}
+.accordion h1{
+    text-align: center;
+}
+
+.accordion .accordion_content
+{
+    background: rgb(166, 202, 185);
+    border: 1px solid rgb(60, 89, 127);
+    border-radius: 4px;
+    margin: 10px;
+    
+}
+
+.accordion_content header{
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    padding: 0px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.accordion_content .desc
+{   font-size: 13px;
+    color: rgb(67, 42, 34);
+    padding: 0px 15px;
+    font-weight: 400;
+    display: none;
+}
+.collapse{
+    border: 0;
+    border-radius: 2px;
+    display: none;
+
+}
+
+.expand{
+    border: 0;
+    border-radius: 2px;
+
+
+}
+
+.active .desc
+{
+    display: block;
+}
